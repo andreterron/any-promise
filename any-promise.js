@@ -23,6 +23,9 @@ module.exports = (function(){
       if(lib.Promise !== undef){
         return lib.Promise;
       }
+      if(lib.promise !== undef){
+        return lib.promise;
+      }
       return lib;
     } catch(e){}
   }
